@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		A679A97429A2F61300D37E62 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A97329A2F61300D37E62 /* AppDelegate.swift */; };
 		A679A97629A2F61300D37E62 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A97529A2F61300D37E62 /* SceneDelegate.swift */; };
-		A679A97829A2F61300D37E62 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A97729A2F61300D37E62 /* ViewController.swift */; };
+		A679A97829A2F61300D37E62 /* TaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A97729A2F61300D37E62 /* TaskViewController.swift */; };
 		A679A97D29A2F61400D37E62 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A679A97C29A2F61400D37E62 /* Assets.xcassets */; };
 		A679A98029A2F61400D37E62 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A679A97E29A2F61400D37E62 /* LaunchScreen.storyboard */; };
 		A679A98C29A2F8C000D37E62 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A98B29A2F8C000D37E62 /* APIProvider.swift */; };
@@ -21,7 +21,7 @@
 		A679A97029A2F61300D37E62 /* ActOnIt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ActOnIt.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A679A97329A2F61300D37E62 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A679A97529A2F61300D37E62 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A679A97729A2F61300D37E62 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A679A97729A2F61300D37E62 /* TaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewController.swift; sourceTree = "<group>"; };
 		A679A97C29A2F61400D37E62 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A679A97F29A2F61400D37E62 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A679A98129A2F61400D37E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -64,7 +64,6 @@
 				A679A98929A2F8A000D37E62 /* Domain */,
 				A679A97329A2F61300D37E62 /* AppDelegate.swift */,
 				A679A97529A2F61300D37E62 /* SceneDelegate.swift */,
-				A679A97729A2F61300D37E62 /* ViewController.swift */,
 				A679A97C29A2F61400D37E62 /* Assets.xcassets */,
 				A679A97E29A2F61400D37E62 /* LaunchScreen.storyboard */,
 				A679A98129A2F61400D37E62 /* Info.plist */,
@@ -75,6 +74,8 @@
 		A679A98829A2F89000D37E62 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				A679A99429A2FE3100D37E62 /* ViewModels */,
+				A679A99329A2FE2A00D37E62 /* ViewControllers */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -102,6 +103,21 @@
 				A679A99129A2FAC400D37E62 /* BaseURLProvider.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		A679A99329A2FE2A00D37E62 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				A679A97729A2F61300D37E62 /* TaskViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		A679A99429A2FE3100D37E62 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,7 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A679A97829A2F61300D37E62 /* ViewController.swift in Sources */,
+				A679A97829A2F61300D37E62 /* TaskViewController.swift in Sources */,
 				A679A99229A2FAC400D37E62 /* BaseURLProvider.swift in Sources */,
 				A679A98C29A2F8C000D37E62 /* APIProvider.swift in Sources */,
 				A679A97429A2F61300D37E62 /* AppDelegate.swift in Sources */,
