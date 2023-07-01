@@ -15,6 +15,10 @@
 		A679A98C29A2F8C000D37E62 /* APIProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A98B29A2F8C000D37E62 /* APIProvider.swift */; };
 		A679A98F29A2FA8500D37E62 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = A679A98E29A2FA8500D37E62 /* Moya */; };
 		A679A99229A2FAC400D37E62 /* BaseURLProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A99129A2FAC400D37E62 /* BaseURLProvider.swift */; };
+		A679A99629A2FEAF00D37E62 /* TaskViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A99529A2FEAF00D37E62 /* TaskViewModel.swift */; };
+		A679A99929A2FF2100D37E62 /* StateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A99829A2FF2100D37E62 /* StateService.swift */; };
+		A679A99C29A2FFA400D37E62 /* TaskState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A99B29A2FFA400D37E62 /* TaskState.swift */; };
+		A679A99E29A2FFE700D37E62 /* RemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A679A99D29A2FFE700D37E62 /* RemoteService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		A679A98129A2F61400D37E62 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A679A98B29A2F8C000D37E62 /* APIProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIProvider.swift; sourceTree = "<group>"; };
 		A679A99129A2FAC400D37E62 /* BaseURLProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURLProvider.swift; sourceTree = "<group>"; };
+		A679A99529A2FEAF00D37E62 /* TaskViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskViewModel.swift; sourceTree = "<group>"; };
+		A679A99829A2FF2100D37E62 /* StateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateService.swift; sourceTree = "<group>"; };
+		A679A99B29A2FFA400D37E62 /* TaskState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskState.swift; sourceTree = "<group>"; };
+		A679A99D29A2FFE700D37E62 /* RemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemoteService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +91,7 @@
 		A679A98929A2F8A000D37E62 /* Domain */ = {
 			isa = PBXGroup;
 			children = (
+				A679A99729A2FF1700D37E62 /* Services */,
 				A679A99029A2FABC00D37E62 /* Helpers */,
 				A679A98A29A2F8B000D37E62 /* Networking */,
 			);
@@ -116,8 +125,27 @@
 		A679A99429A2FE3100D37E62 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				A679A99529A2FEAF00D37E62 /* TaskViewModel.swift */,
 			);
 			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		A679A99729A2FF1700D37E62 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A679A99A29A2FF2C00D37E62 /* StateService */,
+				A679A99D29A2FFE700D37E62 /* RemoteService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		A679A99A29A2FF2C00D37E62 /* StateService */ = {
+			isa = PBXGroup;
+			children = (
+				A679A99829A2FF2100D37E62 /* StateService.swift */,
+				A679A99B29A2FFA400D37E62 /* TaskState.swift */,
+			);
+			path = StateService;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,10 +224,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A679A99929A2FF2100D37E62 /* StateService.swift in Sources */,
 				A679A97829A2F61300D37E62 /* TaskViewController.swift in Sources */,
+				A679A99629A2FEAF00D37E62 /* TaskViewModel.swift in Sources */,
 				A679A99229A2FAC400D37E62 /* BaseURLProvider.swift in Sources */,
 				A679A98C29A2F8C000D37E62 /* APIProvider.swift in Sources */,
 				A679A97429A2F61300D37E62 /* AppDelegate.swift in Sources */,
+				A679A99C29A2FFA400D37E62 /* TaskState.swift in Sources */,
+				A679A99E29A2FFE700D37E62 /* RemoteService.swift in Sources */,
 				A679A97629A2F61300D37E62 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
